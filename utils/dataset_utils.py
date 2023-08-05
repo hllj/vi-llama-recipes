@@ -16,7 +16,7 @@ from typing import Optional
 
 DATASET_PREPROC = {
     "alpaca_dataset": partial(get_alpaca_dataset, max_words=224),
-    "vi_bactrian": partial(get_bactrian_dataset, max_word=224),
+    "vi_bactrian_dataset": get_bactrian_dataset,
     "grammar_dataset": get_grammar_dataset,
     "samsum_dataset": get_samsum_dataset,
 }

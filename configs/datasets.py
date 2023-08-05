@@ -29,7 +29,7 @@ class alpaca_dataset:
     
 @dataclass
 class vi_bactrian_dataset:
-    dataset: str = "vi_bactrian"
+    dataset: str = "vi_bactrian_dataset"
     train_split: str = "train"
     test_split: str = "val"
     data_path: str = "ft_datasets/vi_bactrian/vi.json"

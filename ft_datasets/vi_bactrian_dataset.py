@@ -25,8 +25,8 @@ PROMPT_DICT = {
     ),
 }
 
-class InstructionDataset(Dataset):
-    def __init__(self, dataset_config, tokenizer, partition="train", max_words=30):
+class ViInstructionDataset(Dataset):
+    def __init__(self, dataset_config, tokenizer, partition="train", max_words=224):
         self.ann = json.load(open(dataset_config.data_path))
         if partition == "train":
             self.ann = self.ann
@@ -75,3 +75,4 @@ class InstructionDataset(Dataset):
             "labels": labels,
             "attention_mask":example_mask,
         }
+
